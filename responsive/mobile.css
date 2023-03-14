@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Hanken Grotesk", sans-serif;
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+}
+
+.upper-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 1.6rem;
+  width: 100%;
+  height: 43%;
+  color: #fff;
+  border-bottom-left-radius: 36px;
+  border-bottom-right-radius: 36px;
+  background-image: linear-gradient(
+    180deg,
+    rgb(114, 72, 230),
+    hsla(256, 72%, 46%, 1)
+  );
+}
+
+p {
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.circle {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  background-color: #fff;
+  margin: 1rem 0;
+  background-image: linear-gradient(
+    to bottom,
+    hsla(256, 72%, 46%, 1),
+    rgb(114, 72, 230)
+  );
+}
+.circle > span {
+  font-size: 3.6rem;
+  font-weight: bolder;
+}
+
+.upper-container > span {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.upper-container > p {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.lower-container {
+  width: 100vw;
+  height: 57%;
+  padding: 1.6rem;
+}
+
+.lower-container > p {
+  font-size: 1.3rem;
+  font-weight: 800;
+  margin-bottom: 1.2rem;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+  height: 100%;
+  margin-top: 1.2rem;
+}
+
+.divider-memory,
+.divider-reaction,
+.divider-verbal,
+.divider-visual {
+  display: flex;
+  gap: 1.4rem;
+}
+
+.score {
+  display: flex;
+  gap: 0.4rem;
+}
+
+.score > p:nth-child(1) {
+  font-weight: 700;
+  font-size: 1.15rem;
+  color: #000;
+}
+
+.score > p:nth-child(2),
+.score > p:nth-child(3) {
+  font-weight: 700;
+  font-size: 1.15rem;
+  color: gray;
+}
+
+.reaction {
+  display: flex;
+  background-color: hsl(0, 100%, 95%);
+  padding: 1.2rem;
+  border-radius: 10px;
+  font-weight: 800;
+  justify-content: space-between;
+}
+
+.divider-reaction > p {
+  color: hsl(0, 100%, 67%);
+}
+
+.divider-memory > p {
+  color: hsl(39, 100%, 56%);
+}
+
+.reaction:nth-child(2) {
+  background-color: hsl(39, 100%, 95%);
+}
+
+.divider-verbal > p {
+  color: hsl(166, 100%, 37%);
+}
+
+.reaction:nth-child(3) {
+  background-color: hsl(166, 100%, 95%);
+}
+
+.divider-visual > p {
+  color: hsl(234, 85%, 45%);
+}
+
+.reaction:nth-child(4) {
+  background-color: hsl(234, 85%, 95%);
+}
+
+button {
+  width: 100%;
+  height: 50px;
+  border-radius: 50px;
+  border: none;
+  background-color: hsl(224, 30%, 27%);
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin-top: 8px;
+}
